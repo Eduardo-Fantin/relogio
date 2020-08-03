@@ -2,10 +2,11 @@ function carregar() {
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
     var date = new Date()
-    var hora = date.toLocaleTimeString()
+    var hora = date.getHours()
+    var horatrue = date.toLocaleTimeString()
     
     //olá, mundo!
-    msg.innerHTML = `Agora são ${hora} horas.`
+    msg.innerHTML = `Agora são ${horatrue} horas.`
     if(hora>=6 && hora<12){
         document.body.style.background = '#F0E68C'
         img.src = 'fotomanha.png'
