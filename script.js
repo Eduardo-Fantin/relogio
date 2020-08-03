@@ -4,7 +4,7 @@ function carregar() {
     var date = new Date()
     var hora = date.toLocaleTimeString()
     
-    
+    //olá, mundo!
     msg.innerHTML = `Agora são ${hora} horas.`
     if(hora>=6 && hora<12){
         document.body.style.background = '#F0E68C'
